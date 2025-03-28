@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-pdf-page-split",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n node to split PDF documents into individual pages",
   "keywords": [
     "n8n",
@@ -30,7 +30,8 @@
     "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "index.js"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,

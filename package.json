@@ -1,0 +1,61 @@
+{
+  "name": "n8n-nodes-pdf-page-split",
+  "version": "0.1.0",
+  "description": "n8n node to split PDF documents into individual pages",
+  "keywords": [
+    "n8n",
+    "n8n-node",
+    "n8n-community-node",
+    "pdf",
+    "split",
+    "document"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/username/n8n-nodes-pdf-page-split",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/n8n-nodes-pdf-page-split.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier --write \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix",
+    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/PdfPageSplitApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/PdfPageSplit/PdfPageSplit.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "@types/request-promise-native": "~1.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-plugin-n8n-nodes-base": "^1.11.0",
+    "gulp": "^4.0.2",
+    "n8n-core": "^0.166.0",
+    "n8n-workflow": "^0.147.0",
+    "prettier": "^2.7.1",
+    "typescript": "~4.8.4"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}

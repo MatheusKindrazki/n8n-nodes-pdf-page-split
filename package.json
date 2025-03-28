@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-pdf-page-split",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n node to split PDF documents into individual pages",
   "keywords": [
     "n8n",
@@ -13,8 +13,8 @@
   "license": "MIT",
   "homepage": "https://github.com/username/n8n-nodes-pdf-page-split",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Matheus Kindrazki",
+    "email": "matheus@kindrazki.dev"
   },
   "repository": {
     "type": "git",

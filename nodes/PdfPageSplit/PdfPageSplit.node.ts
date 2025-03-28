@@ -1,3 +1,4 @@
+/* eslint-disable n8n-nodes-base/node-param-description-excess-final-period */
 import type {
 	IExecuteFunctions,
 	INodeExecutionData,
